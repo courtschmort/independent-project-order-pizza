@@ -3,7 +3,7 @@
 function Pizza (size, toppings) {
   this.size = size,
   this.toppings = toppings,
-  this.price = 8
+  this.price = 10
 }
 
 Pizza.prototype.totalPrice = function() {
@@ -11,12 +11,19 @@ Pizza.prototype.totalPrice = function() {
     this.price += 1;
   });
   if (this.size === "Large") {
-    this.price += 8;
-  } else if (this.size === "Medium") {
-    this.price += 6;
+    this.price += 5;
+  } else if (this.size === "Small") {
+    this.price -= 5;
   } else {
     return this.price;
   }
 });
 
 // FRONT-END LOGIC
+$(document).ready(function() {
+  $("form").submit(function(event) {
+    event.preventDefault();
+
+
+  })
+})
