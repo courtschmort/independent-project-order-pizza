@@ -7,7 +7,7 @@ function Pizza (size, toppings) {
 }
 
 Pizza.prototype.totalPrice = function() {
-  for (i = 1; i <= this.toppings.length; i++) {
+  for (i = 0; i < this.toppings.length; i ++) {
     this.price += 1;
   }
   if (this.size === "large") {
@@ -23,6 +23,8 @@ $(document).ready(function() {
   $("form#order").submit(function(event) {
     event.preventDefault();
 
+    var name = $("input#name").val();
+
     var size = $("input:radio[name=size]:checked").val();
 
     var toppingsArray = [];
@@ -32,10 +34,20 @@ $(document).ready(function() {
     });
 
     var pizza = new Pizza(size, toppingsArray);
-    console.log(pizza);
 
-    var receipt = pizza.totalPrice();
-    console.log(receipt);
+    var total = pizza.totalPrice();
 
-  })
-})
+    if (name != "") {
+      $("#output").show();
+      $(".name").text(name);
+      $(".total").text("$" + total.toFixed(2));
+      $(".size").text(size);
+    } else {
+      alert("Please enter your name.");
+    };
+
+    var elmnt = document.getElementById("output");
+    elmnt.scrollIntoView();
+
+  });
+});

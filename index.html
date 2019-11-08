@@ -1,153 +1,145 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <!-- Optional JavaScript -->
-    <script src="js/scripts.js" type="text/javascript"></script>
+  <!-- Optional JavaScript -->
+  <script src="js/scripts.js" type="text/javascript"></script>
 
-    <title>Courtney's Pie Co. | Order Pizza</title>
-  </head>
-  <body>
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Courtney's Pie Co.</h1>
-        <h1 class="display-1">Order Pizza</h1>
-        <p class="lead">Our 12" medium cheese pizza for just $10 can be customized with extra toppings for $1 per topping. Additional sizes available.</p>
-      </div>
-    </div>
+  <title>Courtney's Pie Co. | Order Pizza</title>
+</head>
+<body>
+  <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <form id="order">
-
-        <!-- <div class="form-group row">
-          <label for="name" class="col-sm-2 col-form-label">Name</label>
-          <div class="col-sm-5">
-            <input type="text" class="form-control" id="first" placeholder="First">
-          </div>
-          <div class="col-sm-5">
-            <input type="text" class="form-control" id="last" placeholder="Last">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="email" class="col-sm-2 col-form-label">Email</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="email" placeholder="Email">
-          </div>
-        </div> -->
-        <fieldset class="form-group">
-          <div class="row">
-            <legend class="col-form-label col-sm-2 pt-0">Size</legend>
-            <div class="col-sm-10">
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="size" id="small" value="small">
-                <label class="form-check-label" for="size">
-                  10" Small <strong>$5</strong>
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="size" id="medium" value="medium" checked>
-                <label class="form-check-label" for="size">
-                  12" Medium <strong>$10</strong>
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="size" id="large" value="large">
-                <label class="form-check-label" for="size">
-                  14" Large <strong>$15</strong>
-                </label>
-              </div>
-            </div>
-          </div>
-        </fieldset>
-        <div class="form-group row">
-          <div class="col-sm-2">Toppings (Optional)</div>
-          <div class="col-sm-10">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="pepperoni" id="pepperoni" name="toppings">
-              <label class="form-check-label" for="toppings">
-                Pepperoni <strong>$1</strong>
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="mushrooms" id="mushrooms" name="toppings">
-              <label class="form-check-label" for="toppings">
-                Mushrooms <strong>$1</strong>
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="onions" id="onions" name="toppings">
-              <label class="form-check-label" for="toppings">
-                Onions <strong>$1</strong>
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="sausage" id="sausage" name="toppings">
-              <label class="form-check-label" for="toppings">
-                Sausage <strong>$1</strong>
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="bacon" id="bacon" name="toppings">
-              <label class="form-check-label" for="toppings">
-                Bacon <strong>$1</strong>
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="extra-cheese" id="extra-cheese" name="toppings">
-              <label class="form-check-label" for="toppings">
-                Extra cheese <strong>$1</strong>
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="black-olives" id="black-olives" name="toppings">
-              <label class="form-check-label" for="toppings">
-                Black olives <strong>$1</strong>
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="green-peppers" id="green-peppers" name="toppings">
-              <label class="form-check-label" for="toppings">
-                Green peppers <strong>$1</strong>
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="pineapple" id="pineapple" name="toppings">
-              <label class="form-check-label" for="toppings">
-                Pineapple <strong>$1</strong>
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="spinach" id="spinach" name="toppings">
-              <label class="form-check-label" for="toppings">
-                Spinach <strong>$1</strong>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="form-group row">
-          <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">Place order</button>
-          </div>
-        </div>
-
-      </form>
-      <div class="output">
-        <p>Thank you for your order, <span class="name"></span>! Your pizza will be ready soon.</p>
-        <span class="receipt"></span>
-      </div>
+      <h1 class="display-4">Courtney's Pie Co.</h1>
+      <h1 class="display-1">Order Pizza</h1>
+      <p class="lead">Our 12" medium cheese pizza for just $10 can be customized with extra toppings for $1 per topping. Additional sizes available.</p>
     </div>
-  </body>
+  </div>
+  <div class="container">
+    <form id="order">
+
+      <div class="form-group row">
+        <label for="name" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="name" placeholder="First">
+        </div>
+      </div>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-sm-2 pt-0">Size</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="size" id="small" value="small">
+              <label class="form-check-label" for="size">
+                10" Small <strong>$5</strong>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="size" id="medium" value="medium" checked>
+              <label class="form-check-label" for="size">
+                12" Medium <strong>$10</strong>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="size" id="large" value="large">
+              <label class="form-check-label" for="size">
+                14" Large <strong>$15</strong>
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group row">
+        <div class="col-sm-2">Toppings (Optional)</div>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="pepperoni" id="pepperoni" name="toppings">
+            <label class="form-check-label" for="toppings">
+              Pepperoni <strong>$1</strong>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="mushrooms" id="mushrooms" name="toppings">
+            <label class="form-check-label" for="toppings">
+              Mushrooms <strong>$1</strong>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="onions" id="onions" name="toppings">
+            <label class="form-check-label" for="toppings">
+              Onions <strong>$1</strong>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="sausage" id="sausage" name="toppings">
+            <label class="form-check-label" for="toppings">
+              Sausage <strong>$1</strong>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="bacon" id="bacon" name="toppings">
+            <label class="form-check-label" for="toppings">
+              Bacon <strong>$1</strong>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="extra-cheese" id="extra-cheese" name="toppings">
+            <label class="form-check-label" for="toppings">
+              Extra cheese <strong>$1</strong>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="black-olives" id="black-olives" name="toppings">
+            <label class="form-check-label" for="toppings">
+              Black olives <strong>$1</strong>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="green-peppers" id="green-peppers" name="toppings">
+            <label class="form-check-label" for="toppings">
+              Green peppers <strong>$1</strong>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="pineapple" id="pineapple" name="toppings">
+            <label class="form-check-label" for="toppings">
+              Pineapple <strong>$1</strong>
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="spinach" id="spinach" name="toppings">
+            <label class="form-check-label" for="toppings">
+              Spinach <strong>$1</strong>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Place order</button>
+        </div>
+      </div>
+
+    </form>
+
+    <div id="output">
+      <p class="display-4">Thank you for your order, <span class="name"></span>! Your total is <strong><span class="total"></span></strong>. Please allow 1 hour for delivery of your <span class="size"></span> pizza.</p>
+    </div>
+
+  </div>
+</body>
 </html>
