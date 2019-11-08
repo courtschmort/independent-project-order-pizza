@@ -7,23 +7,35 @@ function Pizza (size, toppings) {
 }
 
 Pizza.prototype.totalPrice = function() {
-  this.toppings.forEach(function(topping) {
+  for (i = 1; i <= this.toppings.length; i++) {
     this.price += 1;
-  });
-  if (this.size === "Large") {
-    this.price += 5;
-  } else if (this.size === "Small") {
-    this.price -= 5;
-  } else {
-    return this.price;
   }
-});
+  if (this.size === "large") {
+    this.price += 5;
+  } else if (this.size === "small") {
+    this.price -= 5;
+  }
+  return this.price;
+}
 
 // FRONT-END LOGIC
 $(document).ready(function() {
-  $("form").submit(function(event) {
+  $("form#order").submit(function(event) {
     event.preventDefault();
 
+    var size = $("input:radio[name=size]:checked").val();
+
+    var toppingsArray = [];
+    $("input:checkbox[name=toppings]:checked").each(function(){
+      var toppings = $(this).val();
+      toppingsArray.push(toppings);
+    });
+
+    var pizza = new Pizza(size, toppingsArray);
+    console.log(pizza);
+
+    var receipt = pizza.totalPrice();
+    console.log(receipt);
 
   })
 })
