@@ -1,3 +1,34 @@
+.jumbotron {
+  background-color: #007bff;
+}
+
+h4 {
+  color: #003063;
+}
+
+.display-1 {
+  color: white;
+}
+
+.lead {
+  font-size: 1.5rem;
+  color: #e8f0fe;
+}
+
+.price {
+  color: #007bff;
+}
+
 #output {
   display: none;
+}
+
+.display-4 {
+  color: #212529;
+  font-size: 3rem;
+}
+
+.total {
+  font-weight: 500;
+  color: #007bff;
 }
